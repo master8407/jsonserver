@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Json-server</title>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <div id="wrap">
+            <!-- container -->
+            <div id="container">
+                <h1>Welcome to Funcoding</h1>
+                <fieldset>
+                    <legend>Inquiry board</legend>
+                    <div class="board">
+                        <div class="inner">
+                            <input
+                                type="text"
+                                class="userName"
+                                name="userName"
+                                id="userName"
+                            />
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="inner">
+                            <input
+                                type="password"
+                                class="userPass"
+                                name="userPass"
+                                id="userPass"
+                            />
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <textarea
+                            name="userContents"
+                            class="userContents"
+                            id="userContents"
+                            cols="30"
+                            rows="5"
+                            resize="no"
+                        ></textarea>
+                        <label for="userContents">Message</label>
+
+                        <button type="submit" class="btn_send" id="btn_send">
+                            send
+                        </button>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="result_wrap">
+                <ul class="resultData"></ul>
+            </div>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>

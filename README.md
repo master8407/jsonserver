@@ -1,2 +1,2 @@
-# jsonserver
-nodejs 로 만드는 Json-server
+# json-server
+Nodejs로 jsonserver 만들기
